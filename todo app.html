@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <style>
+      /* Style for the to-do list */
+      .todo-list {
+        margin: 0 auto;
+        max-width: 500px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style for the list items */
+      .todo-item {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      /* Style for the completed items */
+      .completed {
+        text-decoration: line-through;
+        color: #999;
+      }
+
+      /* Style for the input field and button */
+      .add-item {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .add-item input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        font-size: 16px;
+      }
+      .add-item button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .add-item button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-list">
+      <h1>To-Do List</h1>
+      <ul>
+        <li class="todo-item">Buy groceries</li>
+        <li class="todo-item completed">Clean the kitchen</li>
+        <li class="todo-item">Do laundry</li>
+      </ul>
+      <div class="add-item">
+        <input type="text" placeholder="Add a new task">
+        <button>Add</button>
+      </div>
+    </div>
+  </body>
+</html>
